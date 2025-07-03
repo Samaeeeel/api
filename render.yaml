@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ecoexplora-api
+    env: python
+    buildCommand: ""
+    startCommand: "python apigemini.py"
+    plan: free
