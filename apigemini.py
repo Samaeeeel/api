@@ -12,8 +12,8 @@ API_KEY = os.environ.get("GOOGLE_API_KEY")
 genai.configure(api_key=API_KEY) 
 
 # ✅ Modelo disponible en tu cuenta
-model = genai.GenerativeModel("gemini-1.5-pro-latest")
-#model = genai.GenerativeModel("gemini-1.5-flash-latest")
+#model = genai.GenerativeModel("gemini-1.5-pro-latest")
+model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 @app.route('/')
 def index():
