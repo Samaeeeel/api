@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # 🔑 Tu API Key correcta
-API_KEY = "AIzaSyDzLNBpSG4BFBzzFWjJU08Zn4DmsVAtRw8"
+API_KEY = os.environ.get("AIzaSyDzLNBpSG4BFBzzFWjJU08Zn4DmsVAtRw8")
 genai.configure(api_key=API_KEY)
 
 # ✅ Modelo disponible en tu cuenta
